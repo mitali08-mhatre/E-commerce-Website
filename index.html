@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali Shop</title>
+    <link rel="stylesheet" href="Diwali.css">
+    <script src="jquery-3.7.1.js"></script>
+
+    
+</head>
+<body>
+    <header class="header">
+        <h1>Diwali Special Products</h1>
+        <nav class="nav">
+            <a href="#products">Shop Now</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#cart"><span class="cart-button">Cart (<span id="cart-count">0</span>)</span></a>
+            
+        </nav>
+    </header>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <!-- Diya sets -->
+            <div class="product" data-id="1" data-name="Diya Set" data-price="200">
+                <img src="images\diya1.png" alt="Diya Set">
+                <h3>Diya Set</h3>
+                <p>Price: ₹200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Diya Set" data-price="400">
+                <img src="images\diya2.png" alt="Diya Set">
+                <h3>Diya Set</h3>
+                <p>Price: ₹400</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="Diya Set" data-price="600">
+                <img src="images\diya3.png" alt="Diya Set">
+                <h3>Diya Set</h3>
+                <p>Price: ₹600</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4" data-name="Diya Set" data-price="200">
+                <img src="images\diya4.png" alt="Diya Set" style="height: 200px;">
+                <h3>Diya Set</h3>
+                <p>Price: ₹200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="5" data-name="Diya Set" data-price="200">
+                <img src="images\diya5.png" alt="Diya Set" style="height: 200px;">
+                <h3>Diya Set</h3>
+                <p>Price: ₹200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Rangoli sets -->
+            <div class="product" data-id="2" data-name="Rangoli Colors" data-price="200">
+                <img src="images\rangoli1.png" alt="Rangoli Colors">
+                <h3>Rangoli Colors</h3>
+                <p>Price: ₹200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Rangoli Colors" data-price="150">
+                <img src="images\rangoli2.png" alt="Rangoli Colors">
+                <h3>Rangoli Colors</h3>
+                <p>Price: ₹150</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Rangoli Colors" data-price="150">
+                <img src="images\rangoli3.png" alt="Rangoli Colors" style="height: 190px;">
+                <h3>Rangoli Colors</h3>
+                <p>Price: ₹150</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Rangoli Colors" data-price="200">
+                <img src="images\rangoli4.png" alt="Rangoli Colors" style="height: 190px;">
+                <h3>Rangoli Colors</h3>
+                <p>Price: ₹200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Rangoli Colors" data-price="150">
+                <img src="images\rangoli5.png" alt="Rangoli Colors" style="height: 190px;">
+                <h3>Rangoli Colors</h3>
+                <p>Price: ₹150</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Sweets -->
+            <div class="product" data-id="3" data-name="Sweets Box" data-price="500">
+                <img src="images\sweet1.png" alt="Sweets Box" style="height: 240px;">
+                <h3>Sweets Box</h3>
+                <p>Price: ₹500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="Sweets Box" data-price="700">
+                <img src="images\sweet2.png" alt="Sweets Box" style="height: 240px;">
+                <h3>Sweets Box</h3>
+                <p>Price: ₹700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="Sweets Box" data-price="800">
+                <img src="images\sweet3.png" alt="Sweets Box" style="height: 240px;">
+                <h3>Sweets Box</h3>
+                <p>Price: ₹800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="Sweets Box" data-price="1000">
+                <img src="images\sweet4.png" alt="Sweets Box" style="height: 240px;">
+                <h3>Sweets Box</h3>
+                <p>Price: ₹1000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="Sweets Box" data-price="1200">
+                <img src="images\sweet5.png" alt="Sweets Box" style="height: 240px;">
+                <h3>Sweets Box</h3>
+                <p>Price: ₹1200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="total-price">0</span></p>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: Mitali@diwalishop.com </p>
+        <p>Phone: +91 1234567890</p>
+    </footer>
+
+    <script src="Diwali.js"></script>
+</body>
+</html>
